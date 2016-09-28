@@ -1,0 +1,91 @@
+body{
+	font-family: 'Helvetica', sans-serif;
+}
+
+.cv-container{
+	max-width: 1024px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 60px;
+	font-weight: 100;
+}
+h1, h2{
+	text-align: center;
+}
+aside{
+	width: 30%;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+aside h4{
+	font-style: italic;
+}
+.main-feed{
+	width: 80%
+	float: right;
+}
+.date{
+	width: 10%
+	float: left
+	text-align: right;
+}
+.entry p{
+	margin-left: 10%;
+}
+a{
+  text-decoration: none;
+  color: #666; //this is dark grey
+}
+a:hover, a:focus, a:active{
+  color: #000; //this is black
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 1.6%;
+	background: #d6edf5;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
